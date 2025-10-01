@@ -1,0 +1,149 @@
+@use "../../variables/variables" as *;
+
+.overlay__screen2 {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+// MORE
+.more {
+  position: absolute;
+  bottom: 85px;
+  left: 392px;
+  right: 506px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  z-index: 2;
+  @media (max-width: 1600px) {
+    left: 150px;
+  }
+  @media (max-width: 1330px) {
+    display: none;
+  }
+}
+.more__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 6.3px;
+  color: white;
+  font-weight: 600;
+  font-family: $Open;
+}
+//
+
+//ARROW
+.line__arrow--white {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.polyline__arrow--white {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+//
+
+//RENOVATION__INFO
+
+.renovation__info {
+  position: absolute;
+  top: 383px;
+  padding-inline: 272px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  @media (max-width: 1550px) {
+    padding-inline: 100px;
+  }
+  @media (max-width: 1330px) {
+    gap: 20px;
+    justify-content: center;
+  }
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+    gap: 50px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+  
+  }
+}
+
+.renovation__title {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: $Bruno;
+  padding-block-end: 18px;
+  @media (max-width: 992.99px) {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+
+.renovation__text {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: $Open;
+  text-transform: uppercase;
+  max-width: 230px;
+  width: 230px;
+  @media (max-width: 992.99px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: inherit;
+  }
+}
+
+.renovation__years-text,
+.renovation__employees-text {
+  width: 334px;
+  max-width: 334px;
+  @media (max-width: 992.99px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: inherit;
+  }
+}
+.renovation__years-text--margin {
+  margin-inline-start: -3px;
+}
+
+.renovation__years,
+.renovation__complete {
+  position: relative;
+  @media (max-width: 1330px) {
+    position: static;
+  }
+}
+.renovation__years::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 150%;
+  background: linear-gradient(#ffffff00, #ffffff, #ffffff00);
+  right: -94px;
+  top: -50px;
+}
+.renovation__complete::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 150%;
+  background: linear-gradient(#ffffff00, #ffffff, #ffffff00);
+  right: -144px;
+  top: -50px;
+}
+
+//

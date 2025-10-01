@@ -1,0 +1,186 @@
+.overlay__screen2 {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.more {
+  position: absolute;
+  bottom: 85px;
+  left: 392px;
+  right: 506px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+@media (max-width: 1600px) {
+  .more {
+    left: 150px;
+  }
+}
+@media (max-width: 1330px) {
+  .more {
+    display: none;
+  }
+}
+
+.more__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 6.3px;
+  color: white;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.line__arrow--white {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.polyline__arrow--white {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.renovation__info {
+  position: absolute;
+  top: 383px;
+  padding-inline: 272px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 120px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+@media (max-width: 1550px) {
+  .renovation__info {
+    padding-inline: 100px;
+  }
+}
+@media (max-width: 1330px) {
+  .renovation__info {
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 992.99px) {
+  .renovation__info {
+    padding-inline: 30px;
+    gap: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .renovation__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 200px;
+  }
+}
+
+.renovation__title {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: "Bruno Ace SC";
+  -webkit-padding-after: 18px;
+          padding-block-end: 18px;
+}
+@media (max-width: 992.99px) {
+  .renovation__title {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+
+.renovation__text {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  max-width: 230px;
+  width: 230px;
+}
+@media (max-width: 992.99px) {
+  .renovation__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: inherit;
+  }
+}
+
+.renovation__years-text,
+.renovation__employees-text {
+  width: 334px;
+  max-width: 334px;
+}
+@media (max-width: 992.99px) {
+  .renovation__years-text,
+  .renovation__employees-text {
+    font-size: 20px;
+    line-height: 30px;
+    width: inherit;
+  }
+}
+
+.renovation__years-text--margin {
+  -webkit-margin-start: -3px;
+          margin-inline-start: -3px;
+}
+
+.renovation__years,
+.renovation__complete {
+  position: relative;
+}
+@media (max-width: 1330px) {
+  .renovation__years,
+  .renovation__complete {
+    position: static;
+  }
+}
+
+.renovation__years::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 150%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(#ffffff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  right: -94px;
+  top: -50px;
+}
+
+.renovation__complete::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 150%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(#ffffff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  right: -144px;
+  top: -50px;
+}/*# sourceMappingURL=screen_2.css.map */

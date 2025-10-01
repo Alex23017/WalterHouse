@@ -1,0 +1,325 @@
+.overlay__screen3 {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__body {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 67.5rem;
+}
+@media (max-width: 768px) {
+  .gallery__body {
+    height: inherit;
+    max-height: 67.5rem;
+  }
+}
+
+.gallery__title {
+  position: absolute;
+  top: 28.4375rem;
+  color: white;
+  z-index: 5;
+  cursor: pointer;
+  font-size: 2.25rem;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: "Bruno Ace SC";
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.gallery__card {
+  transition: 1.5s ease;
+  cursor: pointer;
+  position: relative;
+  max-width: 40rem;
+  overflow: hidden;
+}
+.gallery__card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.gallery__card:hover .overlay__screen3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+.gallery__card:hover .gallery__title {
+  color: #ffac30;
+  left: 20%;
+  transform: translate(-50%);
+}
+.gallery__card:active .gallery__title {
+  color: #ffac30;
+  left: 20%;
+  transform: translate(-50%);
+}
+.gallery__card:hover {
+  width: 61.25rem;
+  max-width: 61.25rem;
+}
+.gallery__card:active {
+  width: 61.25rem;
+  max-width: 61.25rem;
+}
+.gallery__card:hover .gallery__info {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.gallery__card:hover .gallary__path-color {
+  opacity: 1;
+}
+.gallery__card:hover .gallary__title-color {
+  fill: #ffac30;
+}
+@media (max-width: 768px) {
+  .gallery__card:hover .elite__title {
+    color: #ffac30;
+    left: 53.8%;
+    transform: translate(-50%);
+  }
+  .gallery__card:active .elite__title {
+    color: #ffac30;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .gallery__card:hover .vip__title {
+    color: #ffac30;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .gallery__card:active .vip__title {
+    color: #ffac30;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .gallery__card:hover .extra__title {
+    color: #ffac30;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .gallery__card:active .extra__title {
+    color: #ffac30;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.elite__body img {
+  -o-object-position: left 0.625rem bottom 1.25rem;
+     object-position: left 0.625rem bottom 1.25rem;
+  transform: scale(1.5);
+}
+@media (max-width: 768px) {
+  .elite__body img {
+    -o-object-position: center;
+       object-position: center;
+    transform: scale(1.1);
+  }
+}
+
+.extra__body img {
+  transform: scale(1.14);
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 768px) {
+  .extra__body img {
+    -o-object-position: center;
+       object-position: center;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .vip__body img {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .vip__body {
+    position: relative;
+  }
+}
+
+.vip__body::after {
+  position: absolute;
+  content: "";
+  width: 0.125rem;
+  height: 150%;
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .vip__body::after {
+    height: 0.125rem;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  }
+}
+
+.vip__body::before {
+  position: absolute;
+  content: "";
+  width: 0.125rem;
+  height: 150%;
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .vip__body::before {
+    height: 0.125rem;
+    width: 100%;
+    top: inherit;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  }
+}
+
+.gallery__info {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-out;
+  position: absolute;
+  top: 29.9375rem;
+  right: 10.0625rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: white;
+  text-transform: uppercase;
+  z-index: 5;
+  max-width: 30rem;
+}
+@media (max-width: 768px) {
+  .gallery__info {
+    top: 12.5625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    max-width: 34.375rem;
+    right: inherit;
+    left: 3.75rem;
+    text-align: center;
+  }
+}
+
+.gallery__link-gallery {
+  padding-block-start: 2.1875rem;
+}
+@media (max-width: 768px) {
+  .gallery__link-gallery {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 5.75rem;
+    gap: 1.875rem;
+  }
+}
+
+.gallery__link-sevices {
+  padding-block-start: 4.3125rem;
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .gallery__link-sevices {
+    display: none;
+  }
+}
+
+.gallary__title-color {
+  fill: white;
+  font-size: 0.3125rem;
+}
+
+.gallary__path-color {
+  stroke: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: 0.3s ease;
+  stroke-width: 0.0125rem;
+}
+
+.elite__title {
+  left: 21.875rem;
+}
+
+.extra__title {
+  left: 21.8125rem;
+}
+
+.vip__title-color {
+  fill: #ffac30;
+}
+
+.screen__3--mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .screen__3--mob {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.screen__3--mob .gallery__body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .screen__3--mob .gallery__card {
+    width: 100%;
+    max-width: 48rem;
+    height: 12rem;
+  }
+  .screen__3--mob .gallery__card:hover {
+    height: 36rem;
+  }
+  .screen__3--mob .gallery__card:active {
+    height: 36rem;
+  }
+}
+@media (max-width: 320px) {
+  .screen__3--mob .gallery__card {
+    height: 10rem;
+  }
+  .screen__3--mob .gallery__card:hover {
+    height: 30rem;
+  }
+  .screen__3--mob .gallery__card:active {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__title {
+    top: 0.75rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.elite__title {
+  left: 53.8%;
+}
+
+.extra__title {
+  left: 53.8%;
+}
+/*# sourceMappingURL=screen_3.css.map */

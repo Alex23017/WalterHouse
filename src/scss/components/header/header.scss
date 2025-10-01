@@ -1,0 +1,169 @@
+@use "../../variables/variables" as *;
+
+.header {
+  width: 100%;
+  padding-inline: 178px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  &::after {
+    position: absolute;
+    bottom: 9px;
+
+    content: "";
+    background-color: hsla(0, 0%, 100%, 0.25);
+    width: 81.5%;
+    height: 1px;
+    @media (max-width: 992.99px) {
+      width: 100%;
+      left: 0;
+          bottom: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-inline-start: 120px;
+    padding-inline-end: 20px;
+  }
+  @media (max-width: 400px) {
+    padding-inline-start: 90px;
+        padding-inline-end: 10px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 40px;
+  padding-block-end: 48px;
+  @media (max-width: 768px) {
+    padding-block: 30px;
+  }
+  @media (max-width: 400px) {
+    padding-block: 19px;
+  }
+}
+.number__body {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 156px;
+  font-family: $Roboto;
+  letter-spacing: 10%;
+  @media (max-width: 1080px) {
+    gap: 80px;
+  }
+}
+
+.burger__body {
+  position: relative;
+}
+
+.burger__body span {
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+.burger__body span::before,
+.burger__body span::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: white;
+  height: 2px;
+}
+
+.burger__body span::before {
+  top: 8px;
+  width: 30px;
+}
+.burger__body span::after {
+  top: -8px;
+  width: 25px;
+}
+
+.number {
+  letter-spacing: 1.7px;
+  @media (max-width: 992.99px) {
+    display: none;
+  }
+}
+.request__body {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  padding-inline-end: 52px;
+  @media (max-width: 768px) {
+    padding-inline-end: 20px;
+  }
+}
+.request__body-call {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 100%;
+  color: $colorYellow;
+  white-space: nowrap;
+  font-family: $Open;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  margin-block-start: 2px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.request__body-img {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.phone__body {
+  position: relative;
+  z-index: 2;
+  padding: 14px;
+  border-radius: 50px;
+}
+
+.phone__rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: visible;
+}
+
+.phone__rings .ring-1,
+.phone__rings .ring-2,
+.phone__rings .ring-3 {
+  fill: none;
+  stroke: white;
+  stroke-width: 3px;
+}
+.phone__rings .ring-1 {
+  fill: white;
+}
+
+.phone__rings .ring-1 {
+  opacity: 0.15;
+}
+
+.phone__rings .ring-2 {
+  opacity: 0.3;
+}
+.phone__rings .ring-3 {
+  opacity: 0.1;
+}
+
+.phone__rings--PC {
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+.phone__rings--MOB {
+  display: none;
+  @media (max-width: 400px) {
+    display: block;
+  }
+}

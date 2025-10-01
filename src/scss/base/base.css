@@ -1,9 +1,11 @@
 html,
 body {
-  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  color: #fff;
 }
 
 body {
@@ -13,18 +15,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-main {
-  width: 100%;
+  background: #000;
 }
 
 .wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 1440px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -32,20 +30,95 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 1920px;
 }
 
-[class*=__container] {
-  padding-block: 120px;
-  padding-inline: 90px;
-}
-@media (max-width: 1025px) {
-  [class*=__container] {
-    padding-block: 100px;
-  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 768px) {
-  [class*=__container] {
-    padding-block: 45px;
-    padding-inline: 32px;
+  .swiper-container {
+    display: none;
   }
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screen__img {
+  width: 100%;
+  height: 100%;
+  max-height: 1080px;
+  min-height: 1080px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .screen__img {
+    min-height: 576px;
+  }
+}
+
+@media (max-width: 992.99px) {
+  .screen__img-1 {
+    display: none;
+  }
+}
+
+.screen__img-768 {
+  display: none;
+}
+@media (max-width: 992.99px) {
+  .screen__img-768 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .screen__img-768 {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .screen__img-768 {
+    display: none;
+  }
+}
+
+.screen__img-320 {
+  display: none;
+}
+@media (max-width: 400px) {
+  .screen__img-320 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+  }
+}
+
+.screen-2 {
+  -o-object-position: center 41%;
+     object-position: center 41%;
+  width: 106%;
+  max-width: 107%;
+  height: 101%;
 }/*# sourceMappingURL=base.css.map */

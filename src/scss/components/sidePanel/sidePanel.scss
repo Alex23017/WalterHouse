@@ -1,0 +1,83 @@
+@use "../../variables/variables" as *;
+.side {
+  position: absolute;
+  top: 37px;
+  left: 65px;
+  z-index: 2;
+  width: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    left: 10px !important;
+    top: 20px !important;
+  }
+  @media (max-width: 400px) {
+    left: 0px !important;
+    top: 14px !important;
+  }
+  &.active {
+    top: 30px;
+    left: 56px;
+    .side__text {
+      margin-inline-end: 107px;
+      margin-block-end: 0px;
+      margin-block-start: 4px;
+    }
+    .line {
+      margin-inline-start: 10px;
+    }
+  }
+}
+
+.side__text {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-inline-end: 93px;
+  writing-mode: sideways-lr;
+  font-family: $Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 8.4px;
+  text-transform: uppercase;
+  color: #ffffff80;
+  margin-block-start: 5px;
+
+}
+
+.line {
+  background-color: hsla(0, 0%, 100%, 0.25);
+  width: 1px;
+  height: 152px;
+  margin-block-start: 70px;
+  margin-inline-start: 10px;
+  margin-block-end: 80px;
+}
+.side__social {
+  display: flex;
+  flex-direction: column;
+}
+.faceboock__link {
+  margin-block-end: 41.25px;
+  margin-inline-start: 4px;
+}
+.instagram__link {
+  margin-block-end: 43.76px;
+  margin-inline-start: 2px;
+}
+.telegram__link {
+  margin-block-end: 43.31px;
+  margin-inline-start: 2px;
+}
+.utube__link {
+  margin-inline-end: 17px;
+}
+
+.side.active .side__body,
+.side__body {
+  @media (max-width: 992.99px) {
+    display: none;
+  }
+}

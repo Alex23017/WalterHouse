@@ -37,14 +37,14 @@ export const htmlDocs = () =>
     .pipe(plumber(plumberConfig("HTML")))
     .pipe(fileInclude({ prefix: "@@", basepath: "@file" }))
     .pipe(dest("./docs/"))
-    .pipe(browserSync.stream());
+    .on("end", () => browserSync.reload());
 
 export const componentsDocs = () =>
   src("./src/components/**/*.html")
     .pipe(plumber(plumberConfig("Components")))
     .pipe(fileInclude({ prefix: "@@", basepath: "@file" }))
     .pipe(dest("./docs/components/"))
-    .pipe(browserSync.stream());
+    .on("end", () => browserSync.reload());
 
 export const scssDocs = () =>
   src("./src/scss/**/*.scss")
@@ -55,7 +55,7 @@ export const scssDocs = () =>
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("."))
     .pipe(dest("./docs/css/"))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({ stream: true }));
 
 export const jsDocs = (done) => {
   src("./src/js/**/*.js")

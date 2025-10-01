@@ -1,0 +1,208 @@
+.form {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-inline: 120px;
+  -webkit-padding-before: 81px;
+          padding-block-start: 81px;
+  -webkit-padding-after: 85px;
+          padding-block-end: 85px;
+  background-color: white;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  max-width: 740px;
+  max-height: 380px;
+}
+@media (max-width: 992.99px) {
+  .form {
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+  }
+}
+@media (max-width: 992.99px) {
+  .form {
+    padding-inline: 125px;
+    -webkit-padding-before: 87px;
+            padding-block-start: 87px;
+    position: relative;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    white-space: inherit;
+    text-wrap: balance;
+    padding-inline: 40px;
+    -webkit-padding-before: 40px;
+            padding-block-start: 40px;
+    -webkit-padding-after: 50px;
+            padding-block-end: 50px;
+    max-height: 240px;
+  }
+}
+
+.input__name,
+.input__number {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  padding-block: 20px;
+}
+@media (max-width: 600px) {
+  .input__name,
+  .input__number {
+    font-size: 14px;
+    padding-block: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input__number {
+    padding-block: 33px;
+  }
+}
+@media (max-width: 600px) {
+  .input__number {
+    padding-block: 10px;
+  }
+}
+
+.input__line {
+  position: relative;
+}
+
+.input__line--name::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(0, 0%, 0%, 0.15);
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 15px;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .input__line--name::after {
+    bottom: 3px;
+  }
+}
+@media (max-width: 700px) {
+  .input__line--name::after {
+    bottom: -2px;
+  }
+}
+
+@media (max-width: 700px) {
+  .input__line--number {
+    -webkit-padding-before: 12px;
+            padding-block-start: 12px;
+  }
+}
+
+.input__line--number::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(0, 0%, 0%, 0.15);
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .input__line--number::after {
+    bottom: 11px;
+  }
+}
+@media (max-width: 700px) {
+  .input__line--number::after {
+    bottom: -1px;
+  }
+}
+
+.form__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 39px;
+  font-size: 20px;
+  line-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 9px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #ffac30;
+  text-transform: uppercase;
+  -webkit-padding-before: 45px;
+          padding-block-start: 45px;
+}
+@media (max-width: 768px) {
+  .form__link {
+    -webkit-padding-before: 35px;
+            padding-block-start: 35px;
+    gap: 52px;
+  }
+}
+@media (max-width: 600px) {
+  .form__link {
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+    -webkit-padding-before: 20px;
+            padding-block-start: 20px;
+    line-height: 20px;
+    letter-spacing: 6.5px;
+  }
+}
+
+.input__line--name {
+  -webkit-padding-after: 9px;
+          padding-block-end: 9px;
+}
+@media (max-width: 768px) {
+  .input__line--name {
+    -webkit-padding-after: 0px;
+            padding-block-end: 0px;
+  }
+}
+
+.arrow {
+  -webkit-margin-end: -2px;
+          margin-inline-end: -2px;
+  min-width: 120px;
+}
+@media (max-width: 768px) {
+  .arrow {
+    min-width: 146px;
+  }
+}
+@media (max-width: 700px) {
+  .arrow {
+    min-width: 100px;
+  }
+}
+
+.form__visible.active {
+  display: none;
+}/*# sourceMappingURL=form.css.map */
