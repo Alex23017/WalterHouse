@@ -29,6 +29,11 @@
     position: relative;
   }
 }
+@media (max-width: 768px) {
+  .form {
+    height: 25rem;
+  }
+}
 @media (max-width: 600px) {
   .form {
     white-space: inherit;

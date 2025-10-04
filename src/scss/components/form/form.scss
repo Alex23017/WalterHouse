@@ -25,7 +25,10 @@
     padding-inline: 125px;
     padding-block-start: 87px;
     position: relative;
+  }
 
+  @media (max-width: 768px) {
+    height: 400px;
   }
   @media (max-width: 600px) {
     white-space: inherit;

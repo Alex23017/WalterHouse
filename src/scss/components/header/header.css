@@ -20,6 +20,11 @@
     bottom: 0px;
   }
 }
+@media (max-width: 600px) {
+  .header::after {
+    bottom: -2px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     -webkit-padding-start: 120px;

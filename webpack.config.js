@@ -8,6 +8,8 @@ export default {
   mode: "production",
   entry: {
     main: "./src/js/main.js",
+    screen5: "./src/js/screen5.js",
+    screen6: "./src/js/screen6.js",
   },
   output: {
     filename: "[name].bundle.js",

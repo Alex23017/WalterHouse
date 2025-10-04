@@ -37,6 +37,11 @@
     position: relative;
   }
 }
+@media (max-width: 768px) {
+  .form {
+    height: 400px;
+  }
+}
 @media (max-width: 600px) {
   .form {
     white-space: inherit;

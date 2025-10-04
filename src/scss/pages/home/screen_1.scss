@@ -21,8 +21,8 @@
   text-transform: uppercase;
   color: white;
   @media (max-width: 992.99px) {
-    top: 236px;
-    left: 46px;
+    top: 235px;
+    left: 44px;
     right: inherit;
   }
   @media (max-width: 700px) {
@@ -110,10 +110,10 @@
   }
 }
 
+
 .swiper-screen-1--mob {
   display: none !important;
   @media (max-width: 768px) {
     display: block !important;
-  
   }
 }

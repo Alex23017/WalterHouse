@@ -17,7 +17,10 @@
     @media (max-width: 992.99px) {
       width: 100%;
       left: 0;
-          bottom: 0px;
+      bottom: 0px;
+    }
+    @media (max-width: 600px) {
+      bottom: -2px;
     }
   }
 
@@ -27,7 +30,7 @@
   }
   @media (max-width: 400px) {
     padding-inline-start: 90px;
-        padding-inline-end: 10px;
+    padding-inline-end: 10px;
   }
 }
 .nav {
