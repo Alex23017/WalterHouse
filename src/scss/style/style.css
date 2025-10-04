@@ -1857,6 +1857,29 @@ body {
   backdrop-filter: blur(20px);
 }
 
+.woman__body--opacity {
+  position: relative;
+}
+.woman__body--opacity::before {
+  position: absolute;
+  content: "";
+  width: 100% !important;
+  height: 2px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(#ffffff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+  z-index: 25;
+  opacity: 0;
+}
+.woman__body--opacity::before {
+  top: 0;
+}
+.woman__body--opacity::after {
+  opacity: 0 !important;
+}
+.woman__body--opacity:hover::before, .woman__body--opacity:hover::after {
+  opacity: 1;
+}
+
 .overlay__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1888,6 +1911,12 @@ body {
   opacity: 1;
 }
 .overlay__cards:active .screen6__title {
+  opacity: 1;
+}
+.overlay__cards:hover .screen6mob__title {
+  opacity: 1;
+}
+.overlay__cards:active .screen6mob__title {
   opacity: 1;
 }
 .overlay__cards::before, .overlay__cards::after {
@@ -2171,6 +2200,82 @@ body {
   height: 1px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1490196078);
+}
+
+@media (max-width: 768px) {
+  .sofa__body--mob {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    visibility: visible;
+  }
+}
+
+.screen__6--mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .screen__6--mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .sceen6mob__body {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sceen6mob__column--top,
+  .sceen6mob__column--middle,
+  .sceen6mob__column--down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sceen6mob__column--down {
+    max-height: 384px;
+  }
+}
+
+.woman__img--down {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .woman__body--down,
+  .woman__img--down {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bath__body,
+  .sofa__body--mob,
+  .woman__body,
+  .kitchen__body .woman__body--down {
+    position: relative;
+  }
+}
+
+.screen6mob__title {
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  max-width: 226px;
+  text-align: center;
+  opacity: 0;
 }
 
 .screen__5--mob {

@@ -8,11 +8,10 @@
   height: 100%;
 }
 
-.screen__img-4{
+.screen__img-4 {
   @media (max-width: 600px) {
     min-height: 540px;
     max-height: 540px;
-  
   }
 }
 .screen__4--mob {
@@ -140,7 +139,7 @@
   top: -32px;
   left: 35px;
   @media (max-width: 600px) {
-  top: -26px;
+    top: -26px;
     left: 34px;
   }
 }
@@ -184,7 +183,6 @@
   }
 }
 
-
 .extra__pagination-title {
   margin-inline-start: -40px;
   @media (max-width: 992.99px) {
@@ -224,9 +222,11 @@
     max-width: 500px;
     font-size: 14px;
     letter-spacing: 3.6px;
+    line-height: 16px;
   }
   @media (max-width: 400px) {
-      max-width: 300px;
+    max-width: 300px;
+    top: 50px;
   }
 }
 .elite__circle-1 {
@@ -267,7 +267,6 @@
   @media (max-width: 600px) {
     font-size: 54px;
   }
-
 }
 
 .circle__m2-circle {
@@ -312,8 +311,8 @@
     top: 115px;
   }
   @media (max-width: 400px) {
-  top: 115px;
-  left: 50.5%;
+    top: 115px;
+    left: 50.5%;
   }
 }
 .vip__line {
@@ -344,8 +343,12 @@
   }
   @media (max-width: 600px) {
     gap: 9px;
+    left: 50%;
     top: 442px;
-    left: 145px;
+    width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: 320px) {
   }
 }
 .select__price-number {

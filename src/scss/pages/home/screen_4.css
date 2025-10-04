@@ -314,11 +314,13 @@
     max-width: 500px;
     font-size: 14px;
     letter-spacing: 3.6px;
+    line-height: 16px;
   }
 }
 @media (max-width: 400px) {
   .select__area {
     max-width: 300px;
+    top: 50px;
   }
 }
 
@@ -469,11 +471,14 @@
 @media (max-width: 600px) {
   .select__price {
     gap: 9px;
+    left: 50%;
     top: 442px;
-    left: 145px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 .select__price-number {
   font-weight: 400;
   font-family: "Bruno Ace SC";

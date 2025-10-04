@@ -12,6 +12,11 @@
     height: inherit;
   }
 }
+@media (max-width: 320px) {
+  .screen__5--mob {
+    height: 33.75rem;
+  }
+}
 
 .screen__img-5 {
   -o-object-fit: cover;
@@ -77,10 +82,20 @@
 @media (max-width: 700px) {
   .drafring__figure {
     top: 2.375rem;
-    left: 10%;
+    left: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .drafring__figure {
+    left: 14%;
   }
 }
 @media (max-width: 400px) {
+  .drafring__figure {
+    left: 11%;
+  }
+}
+@media (max-width: 320px) {
   .drafring__figure {
     left: 3%;
   }
@@ -143,6 +158,11 @@
     left: 53%;
     line-height: 1rem;
     letter-spacing: 0.2625rem;
+  }
+}
+@media (max-width: 400px) {
+  .steps__title {
+    left: 50%;
   }
 }
 

@@ -25,18 +25,40 @@
   }
 }
 
+.sceen6mob__column--top {
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
+}
+
+.sceen6mob__column--middle,
+.sceen6mob__column--down {
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
 .sceen6mob__column--down {
   @media (max-width: 768px) {
     max-height: 384px;
   }
 }
+
 .woman__img--down {
-  object-fit: cover;
+  @media (max-width: 768px) {
+    object-fit: cover;
+    object-position: top;
+  }
 }
 .woman__body--down,
 .woman__img--down {
   @media (max-width: 768px) {
     width: 100%;
+    max-height: 384px;
+    object-position: 0px -210px;
+  }
+  @media (max-width: 600px) {
+    object-position: center;
   }
 }
 
@@ -59,61 +81,163 @@
   max-width: 226px;
   text-align: center;
   opacity: 0;
+  @media (max-width: 768px) {
+    opacity: 1;
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.bath__body,
+.woman__img-wrapper--top {
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(#ffffff00, #ffffff, #ffffff00);
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
 }
 
-.bath__img-wrapper {
-}
-.overlay__cards {
-}
-.bath__body--opacity {
-}
-.screen6mob__title {
-}
-.bath-title {
-}
-.bath__img {
-}
-.sofa__body {
-}
-.sofa__body--mob {
-}
-.sofa__img-wrapper {
-}
-.sofa__body--opacity {
-}
-.sofa-title {
-}
-.sofa__img {
+.sceen6mob__column--mob {
+  display: none;
+  @media (max-width: 320px) {
+    display: flex;
+  }
 }
 
-.woman__body {
-}
-.woman__img-wrapper {
-}
-.woman__body--opacity {
-}
-.woman__img {
-}
-.kitchen__body {
-}
-.kitchen__img-wrapper {
-}
-.kitchen__body--opacity {
-}
-.kitchen-title {
-}
-.kitchen__img {
-}
-
-.woman__body--down {
-}
-.woman__img-wrapper--down {
-}
-.woman__body--opacity--down {
-}
-.woman-title {
-}
 .woman-title--down {
+  letter-spacing: 0px;
+  max-width: 300px;
+  margin-inline-start: -29px;
+  margin-block-start: 2px;
 }
-.woman__img--down {
+.sofa-title,
+.kitchen-title {
+  @media (max-width: 768px) {
+    margin-block-start: 0px;
+  }
+}
+
+.woman__img--more {
+  height: 100px;
+  width: 320px;
+  object-fit: cover;
+  object-position: 0px -80px;
+}
+.sceen6mob__column--mob {
+  position: relative;
+}
+.woman-title--more {
+  display: none;
+  @media (max-width: 320px) {
+    display: flex;
+  }
+  position: absolute;
+  left: 70px;
+  top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: $Open;
+  color: $colorYellow;
+  letter-spacing: 6.3px;
+}
+
+.woman__line {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  top: 53px;
+  left: 135px;
+}
+.woman__line {
+  transform: rotate(90deg);
+
+  &.active {
+    transform: rotate(-90deg) translateX(15px);
+  }
+}
+
+// MORE
+
+.service__mob {
+  background-color: white;
+}
+.service__header {
+  padding-block-start: 82px;
+  padding-inline: 20px;
+  position: relative;
+}
+.mervice__title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $Open;
+  color: $colorYellow;
+  text-align: start;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #00000026;
+  }
+}
+
+.service__text,
+.service__info {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $Open;
+  font-weight: 400;
+  padding-block-start: 40px;
+  color: black;
+  padding-block-end: 24px;
+}
+.service__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 50px;
+  padding-inline-end: 20px;
+  padding-block-start: 3px;
+  line-height: 20px;
+}
+.service__info-text {
+  position: relative;
+  max-width: 280px;
+}
+.service__info-text::before {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: $colorYellow;
+  border-radius: 20px;
+}
+
+.service__popup {
+  display: none;
+}
+.service__popup.open {
+  display: flex;
+}
+
+.service__img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }

@@ -273,11 +273,13 @@
     max-width: 31.25rem;
     font-size: 0.875rem;
     letter-spacing: 0.225rem;
+    line-height: 1rem;
   }
 }
 @media (max-width: 400px) {
   .select__area {
     max-width: 18.75rem;
+    top: 3.125rem;
   }
 }
 
@@ -420,11 +422,12 @@
 @media (max-width: 600px) {
   .select__price {
     gap: 0.5625rem;
+    left: 50%;
     top: 27.625rem;
-    left: 9.0625rem;
+    width: 100%;
+    justify-content: center;
   }
 }
-
 .select__price-number {
   font-weight: 400;
   font-family: "Bruno Ace SC";

@@ -83,3 +83,22 @@ screenBody.addEventListener("click", () => {
 </div>
 `;
 });
+
+//MORE SERVICE
+
+const openMore = document.querySelector(".woman__line");
+const servicePopUp = document.querySelector(".service__popup");
+const closeMore = document.querySelector(".service__img");
+openMore.addEventListener("click", () => {
+  if (servicePopUp) {
+    servicePopUp.classList.toggle("open");
+    openMore.classList.toggle("active");
+  }
+});
+
+closeMore.addEventListener("click", () => {
+  if (servicePopUp) {
+    servicePopUp.classList.remove("open");
+    openMore.classList.remove("active");
+  }
+});
