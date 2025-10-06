@@ -15,7 +15,6 @@
   width: 100%;
   display: none;
   height: 100%;
-  
 
   &.open {
     display: flex;
@@ -23,6 +22,8 @@
   }
   @media (max-width: 768px) {
     display: none;
+  }
+  @media (max-width: 320px) {
   }
 }
 .burger__body {
@@ -140,7 +141,7 @@
     top: -32px;
   }
   @media (max-width: 650px) {
-    top: 0px;
+    top: -36px;
   }
 }
 
@@ -229,4 +230,5 @@
   top: 0px;
   z-index: 10001;
   height: 100%;
+  overflow: auto;
 }

@@ -24,7 +24,6 @@
     display: none;
   }
 }
-
 .burger__body {
   cursor: pointer;
   width: 3.125rem;
@@ -184,7 +183,7 @@
   .menu__link--steps::before,
   .menu__link--blog::before,
   .menu__item--services::before {
-    top: 0;
+    top: -2.25rem;
   }
 }
 
@@ -277,5 +276,6 @@
   top: 0;
   z-index: 10001;
   height: 100%;
+  overflow: auto;
 }
 /*# sourceMappingURL=menu.css.map */

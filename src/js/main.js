@@ -137,7 +137,7 @@ const formClose = document.querySelectorAll(".form__visible, .form");
 const burger = document.querySelector(".burger__body");
 const menu = document.querySelector(".menu");
 const formMenuOpen = document.querySelector(".formMenu");
-const screen = document.querySelectorAll(".screen__3--mob, .screen__4--mob, .screen__6--mob");
+const screen = document.querySelectorAll(".screen__3--mob, .screen__5--mob, .screen__6--mob");
 
 burger.addEventListener("click", () => {
   if (!menu) return;
@@ -182,3 +182,4 @@ closeMore.addEventListener("click", () => {
   servicePopUp.classList.toggle("open");
   formMenuOpen.classList.add("open");
 });
+
