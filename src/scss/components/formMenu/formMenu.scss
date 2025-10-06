@@ -70,10 +70,10 @@
   @media (max-width: 768px) {
     bottom: -58px;
   }
-  @media (max-width: 650px) {
-    bottom: -96px;
-    width: 100%;
-    inset-inline: 0px;
+  @media (max-width: 500px) {
+      bottom: -96px;
+      width: 100%;
+        inset-inline: 0px;
   }
 }
 
@@ -187,6 +187,7 @@
   margin-inline-start: 70px;
   @media (max-width: 768px) {
     gap: 25px;
+
   }
 }
 .formMenu__footer-phone {
@@ -235,7 +236,7 @@
   position: absolute;
   top: 145px;
   left: 210px;
-  @media (max-width: 650px) {
+  @media (max-width: 500px) {
     top: 90px;
   }
 }
@@ -249,12 +250,7 @@
 }
 .time__text {
   @media (max-width: 500px) {
-    max-width: 150px;
-    line-height: 20px;
-  }
-}
-.phone__text {
-  @media (max-width: 500px) {
-  margin-block-start: -2px;
+  max-width: 150px;
+  line-height: 20px;
   }
 }

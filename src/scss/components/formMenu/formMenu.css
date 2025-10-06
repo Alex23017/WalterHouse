@@ -104,7 +104,7 @@
     bottom: -58px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .formMenu__header::after {
     bottom: -96px;
     width: 100%;
@@ -364,7 +364,7 @@
   top: 145px;
   left: 210px;
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .arrow__menu--mob {
     top: 90px;
   }
@@ -383,12 +383,5 @@
   .time__text {
     max-width: 150px;
     line-height: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .phone__text {
-    -webkit-margin-before: -2px;
-            margin-block-start: -2px;
   }
 }/*# sourceMappingURL=formMenu.css.map */

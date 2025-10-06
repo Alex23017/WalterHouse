@@ -12,13 +12,14 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 919px;
   display: none;
+  height: 100%;
 }
 .menu.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .menu {
@@ -313,4 +314,5 @@
   position: absolute;
   top: 0px;
   z-index: 10001;
+  height: 100%;
 }/*# sourceMappingURL=menu.css.map */
