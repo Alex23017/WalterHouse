@@ -130,3 +130,47 @@ blocks.forEach((block) => {
 });
 
 window.addEventListener("resize", priceRender);
+/////////// MENU
+const body = document.querySelector(".body");
+const paginationMenu = document.querySelector(".pagination");
+const formClose = document.querySelectorAll(".form__visible, .form");
+const burger = document.querySelector(".burger__body");
+const menu = document.querySelector(".menu");
+const formMenuOpen = document.querySelector(".formMenu");
+const screenMob = document.querySelectorAll(
+  ".screen__3--mob, .screen__4--mob, .screen__5--mob, .screen__6--mob",
+);
+burger.addEventListener("click", () => {
+  if (!menu) return;
+  menu.classList.toggle("open");
+  formMenuOpen.classList.toggle("open");
+  body.classList.toggle("open");
+
+  if (menu.classList.contains("open")) {
+
+
+    formClose.forEach((btn) => {
+      btn.style.display = "none";
+    });
+    paginationMenu.style.display = "none";
+  } else {
+
+    formClose.forEach((btn) => {
+      btn.style.display = "flex";
+    });
+    paginationMenu.style.display = "flex";
+  }
+});
+
+// MORE SERVICEC
+const closeMore = document.querySelector(".service__img");
+const openMore = document.querySelector(".menu__link--services");
+const servicePopUp = document.querySelector(".service__popup-menu");
+openMore.addEventListener("click", (e) => {
+  e.preventDefault();
+  servicePopUp.classList.toggle("open");
+});
+
+closeMore.addEventListener("click", () => {
+  servicePopUp.classList.toggle("open");
+});

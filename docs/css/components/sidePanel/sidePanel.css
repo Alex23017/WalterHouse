@@ -2,7 +2,7 @@
   position: absolute;
   top: 2.3125rem;
   left: 4.0625rem;
-  z-index: 2;
+  z-index: 999;
   width: 4.25rem;
   display: flex;
   flex-direction: column;

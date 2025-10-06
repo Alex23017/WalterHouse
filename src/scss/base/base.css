@@ -18,6 +18,9 @@ body {
   background: #000;
 }
 
+.body.open {
+  overflow: hidden;
+}
 .wrapper {
   position: relative;
   display: -webkit-box;

@@ -3,7 +3,7 @@
   position: absolute;
   top: 37px;
   left: 65px;
-  z-index: 2;
+  z-index: 999;
   width: 68px;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,6 @@
   text-transform: uppercase;
   color: #ffffff80;
   margin-block-start: 5px;
-
 }
 
 .line {

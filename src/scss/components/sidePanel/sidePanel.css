@@ -2,7 +2,7 @@
   position: absolute;
   top: 37px;
   left: 65px;
-  z-index: 2;
+  z-index: 999;
   width: 68px;
   display: -webkit-box;
   display: -ms-flexbox;

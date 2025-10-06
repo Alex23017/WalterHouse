@@ -4,12 +4,11 @@
   width: 100%;
   padding-inline: 178px;
   position: absolute;
-  z-index: 5;
+  z-index: 999;
   top: 0;
   &::after {
     position: absolute;
-    bottom: 9px;
-
+    bottom: 18px;
     content: "";
     background-color: hsla(0, 0%, 100%, 0.25);
     width: 81.5%;
@@ -17,10 +16,10 @@
     @media (max-width: 992.99px) {
       width: 100%;
       left: 0;
-      bottom: 0px;
+      bottom: 10px;
     }
     @media (max-width: 600px) {
-      bottom: -2px;
+      bottom: 8px;
     }
   }
 
@@ -49,7 +48,7 @@
   display: flex;
   align-items: center;
   color: white;
-  gap: 156px;
+  gap: 108px;
   font-family: $Roboto;
   letter-spacing: 10%;
   @media (max-width: 1080px) {
@@ -66,7 +65,7 @@
   width: 13px;
   height: 2px;
   background-color: white;
-  top: 0;
+  top: 20px;
   left: 0;
 }
 .burger__body span::before,
@@ -89,6 +88,8 @@
 
 .number {
   letter-spacing: 1.7px;
+  margin-block-start: -13px;
+  margin-inline-start: -1px;
   @media (max-width: 992.99px) {
     display: none;
   }
@@ -111,7 +112,10 @@
   font-family: $Open;
   font-weight: 600;
   letter-spacing: 1.7px;
-  margin-block-start: 2px;
+  margin-block-start: -8px;
+  @media (max-width: 768px) {
+    margin-block-start: -9px;
+  }
   @media (max-width: 767px) {
     display: none;
   }
@@ -126,6 +130,7 @@
   z-index: 2;
   padding: 14px;
   border-radius: 50px;
+  margin-block-start: -10px;
 }
 
 .phone__rings {

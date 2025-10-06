@@ -16,13 +16,17 @@
     <link href="https://fonts.googleapis.com/css?family=Bruno+Ace+SC:regular" rel="stylesheet" />
     <link rel="stylesheet" href="css/style/style.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <header class="header">@@include("../components/header/header.html")</header>
       @@include("../components/sidePanel/sidePanel.html")
       @@include("../components/pagination/pagination.html")
+         @@include("../popUp/menu.html")
+         @@include("../components/formMenu/formMenu.html")
+
       <div class="swiper-container">
         <div class="swiper-wrapper">
+             
           @@include("../pages/home/screen_1.html") @@include("../pages/home/screen_2.html")
           @@include("../pages/home/screen_3.html")
           @@include("../pages/home/screen_4.html")
