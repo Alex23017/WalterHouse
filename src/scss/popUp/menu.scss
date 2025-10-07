@@ -66,7 +66,7 @@
     top: 130px;
     gap: 62px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     font-size: 18px;
     gap: 0px;
     top: 80px;
@@ -141,7 +141,9 @@
     top: -32px;
   }
   @media (max-width: 650px) {
-    top: -36px;
+    top: 0px; 
+  }
+  @media (max-width: 649px) {
   }
 }
 
@@ -199,7 +201,7 @@
 .menu__link--costs::after,
 .menu__link--steps::after,
 .menu__link--additional::after {
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     opacity: 0;
   }
 }

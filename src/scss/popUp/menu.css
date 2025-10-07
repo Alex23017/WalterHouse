@@ -84,7 +84,7 @@
     gap: 62px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .menu__items {
     font-size: 18px;
     gap: 0px;
@@ -210,10 +210,9 @@
   .menu__link--steps::before,
   .menu__link--blog::before,
   .menu__item--services::before {
-    top: -36px;
+    top: 0px;
   }
 }
-
 .menu__link--costs {
   -webkit-margin-before: -4px;
           margin-block-start: -4px;
@@ -268,7 +267,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .menu__link--styles::after,
   .menu__link--costs::after,
   .menu__link--steps::after,

@@ -42,6 +42,11 @@
 
       <img src="img/header/call.svg" alt="callIcon" class="request__body-img" />
     </div>
+    <div class="order__close">
+      <div class="order__body"><img class="order__close-close" src="img/order/close.png" alt="close" /></div>
+
+      <img class="order__close-circle" src="img/order/circleClose.svg" alt="close" />
+    </div>
   </div>
 </nav>
 </header>
@@ -152,6 +157,92 @@
   </div>
 </div>
 </div>
+</div>
+
+         <div class="order">
+  <div class="overlay__order"></div>
+  <img src="img/menu/backgroungMenu.jpg" alt="menuBackground" class="menu__background menu__background-order" />
+  <form class="formOrder">
+  <div class="input__line input__line--name">
+    <input type="text" placeholder="Your name" class="input__name" />
+  </div>
+  <div class="input__line input__line--number">
+    <input type="tel" required placeholder="Your phone number" class="input__number" />
+    <span class="error-text">Заполните, пожалуйста, это поле</span>
+  </div>
+
+  <button type="submit" class="form__link form__link-order">
+    order a call
+    <svg
+      class="arrow"
+      xmlns="http://www.w3.org/2000/svg"
+      width="125"
+      height="30"
+      viewBox="0 0 125 60"
+    >
+      <line
+        class="line__arrow"
+        x1="-60"
+        y1="30"
+        x2="142"
+        y2="30"
+        stroke="#f9a12a"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+
+      <polyline
+        class="polyline__arrow"
+        points="150,10 180,30 150,50"
+        fill="none"
+        stroke="#f9a12a"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+</form>
+<div class="form__success">
+  <h2 class="form__success-title">
+    thank you <br />
+    for your application
+  </h2>
+  <p class="form__success-text">Our manager will contact you shortly.</p>
+  <div class="order__back">
+    <a href=""> <h2 class="order__back-title">back to home</h2></a>
+
+    <svg
+      class="arrow"
+      xmlns="http://www.w3.org/2000/svg"
+      width="125"
+      height="30"
+      viewBox="0 0 125 60"
+    >
+      <line
+        class="line__arrow"
+        x1="-60"
+        y1="30"
+        x2="142"
+        y2="30"
+        stroke="#f9a12a"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      ></line>
+
+      <polyline
+        class="polyline__arrow"
+        points="150,10 180,30 150,50"
+        fill="none"
+        stroke="#f9a12a"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></polyline>
+    </svg>
+  </div>
+</div>
+
 </div>
 
          <div class="formMenu">

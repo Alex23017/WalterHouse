@@ -156,7 +156,7 @@ burger.addEventListener("click", () => {
     paginationMenu.style.display = "none";
   } else {
     screen.forEach((el) => {
-      el.style.display = "flex";
+      el.style.display = "";
     });
 
     formClose.forEach((btn) => {
@@ -183,3 +183,92 @@ closeMore.addEventListener("click", () => {
   formMenuOpen.classList.add("open");
 });
 
+// ORDER
+const screenOrder = document.querySelectorAll(
+  ".screen__3--mob, .screen__4--mob, .screen__5--mob, .screen__6--mob",
+);
+const orderPopUp = document.querySelector(".order");
+const orderOpen = document.querySelector(".request__body-call");
+const number = document.querySelector(".number__body");
+const nuv = document.querySelector(".nav");
+const phone = document.querySelector(".phone__body");
+const orderClose = document.querySelector(".order__close");
+const form = document.querySelector(".form__visible");
+const formOrder = document.querySelector(".formOrder");
+const formSuccess = document.querySelector(".form__success ");
+const input = document.querySelector(".input__number");
+const pagination = document.querySelector(".pagination");
+const errorText = input.nextElementSibling;
+orderOpen.addEventListener("click", () => {
+  number.classList.add("open");
+  orderPopUp.classList.add("open");
+  phone.classList.add("open");
+  nuv.classList.add("open");
+  orderClose.classList.add("open");
+  form.style.display = "none";
+  pagination.style.display = "none";
+  screenOrder.forEach((el) => {
+    el.style.display = "none";
+  });
+  formClose.forEach((btn) => {
+    btn.style.display = "none";
+  });
+  if (formMenuOpen) {
+    formMenuOpen.classList.remove("open");
+  }
+
+  menu.classList.remove("open");
+});
+
+orderClose.addEventListener("click", () => {
+  orderPopUp.classList.remove("open");
+  orderClose.classList.remove("open");
+  nuv.classList.remove("open");
+  number.classList.remove("open");
+  phone.classList.remove("open");
+  form.style.display = "";
+  formSuccess.style.display = "none";
+  formOrder.classList.remove("hidden");
+  pagination.style.display = "";
+
+  input.value = "";
+  input.classList.remove("error");
+  errorText.style.display = "none";
+});
+
+formOrder.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (!input.value.trim()) {
+    errorText.style.display = "inline";
+  } else {
+    input.classList.remove("error");
+    errorText.style.display = "none";
+    formOrder.classList.add("hidden");
+    formSuccess.style.display = "flex";
+    nuv.classList.add("hidden");
+  }
+});
+
+const orderBack = document.querySelector(".order__back");
+orderBack.addEventListener("click", () => {
+  orderPopUp.classList.remove("open");
+  orderClose.classList.remove("open");
+  nuv.classList.remove("open");
+  number.classList.remove("open");
+  phone.classList.remove("open");
+  form.style.display = "";
+  formSuccess.style.display = "none";
+  formOrder.classList.remove("hidden");
+  nuv.classList.remove("hidden");
+  screenOrder.forEach((el) => {
+    el.style.display = "";
+  });
+  formClose.forEach((btn) => {
+    btn.style.display = "";
+  });
+
+  input.value = "";
+  input.classList.remove("error");
+  errorText.style.display = "none";
+});
