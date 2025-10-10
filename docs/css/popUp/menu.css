@@ -9,19 +9,27 @@
 }
 
 .menu {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  inset: 0;
+  top: 0;
   width: 100%;
-  display: none;
   height: 100%;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  z-index: 150;
 }
 .menu.open {
   display: flex;
-  overflow: hidden;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
   }
 }
 .burger__body {
@@ -276,5 +284,20 @@
   z-index: 10001;
   height: 100%;
   overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .go-to-slide {
+    display: none;
+  }
+}
+
+.menu__link-mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu__link-mob {
+    display: flex;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

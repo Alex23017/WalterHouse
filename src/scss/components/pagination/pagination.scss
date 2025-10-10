@@ -9,8 +9,10 @@
   right: 115px;
   @media (max-width: 1150px) {
     display: none;
-  
   }
+}
+.pagination.hidden {
+  display: none !important;
 }
 
 .pagination__figure {

@@ -54,6 +54,9 @@
     padding-block: 1.1875rem;
   }
 }
+.nav.hidden {
+  display: none;
+}
 
 .number__body {
   display: flex;

@@ -57,8 +57,8 @@
   }
   &:active .gallery__title {
     color: $colorYellow;
-    left: 20%;
-    transform: translate(-50%);
+    // left: 20%;
+    // transform: translate(-50%);
   }
   &:hover {
     width: 980px;
@@ -69,7 +69,6 @@
     max-width: 980px;
   }
   &:hover .gallery__info {
-    display: block;
     opacity: 1;
     visibility: visible;
   }
@@ -177,6 +176,8 @@
 }
 
 .gallery__info {
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s ease-out;
@@ -202,13 +203,23 @@
     text-align: center;
   }
   @media (max-width: 700px) {
-    top: 168px;
-    left: 20px;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
     font-size: 14px;
+    transform: translate(-50%);
+    // max-width: 280px;
+    align-items: center;
+  }
+  @media (max-width: 400px) {
+    top: 168px;
+  }
+}
+.gallery__text {
+  @media (max-width: 700px) {
     max-width: 280px;
   }
 }
-
 .gallery__link-gallery {
   display: flex;
   gap: 32px;
@@ -223,12 +234,23 @@
   @media (max-width: 700px) {
     padding-block-start: 142px;
   }
+  @media (max-width: 400px) {
+    padding-block-start: 141px;
+    padding-inline-start: 0px;
+  }
 }
-.gallery__link-gallery a {
+.gallery__link-gallery--none {
   @media (max-width: 320px) {
     display: none;
   }
 }
+
+// .gallery__link-gallery--mob {
+//   display: none;
+//   @media (max-width: 320px) {
+//     display: flex;
+//   }
+// }
 .gallery__link-sevices {
   padding-block-start: 69px;
   font-size: 14px;
@@ -236,7 +258,17 @@
   letter-spacing: 6.4px;
   gap: 20px;
   @media (max-width: 768px) {
-    display: none;
+    display: flex;
+    justify-content: center;
+    padding-block-start: 20px;
+    padding-inline-start: 70px;
+  }
+  &:hover {
+    transform: scale(0.9);
+  }
+  @media (max-width: 320px) {
+    padding-block-start: 5px;
+    padding-inline-start: 25px;
   }
 }
 .gallary__title-color {
@@ -268,6 +300,7 @@
 }
 
 .screen__3--mob {
+  position: relative;
   display: none;
   @media (max-width: 768px) {
     display: flex;
@@ -403,4 +436,22 @@
     top: 50px;
     left: 160px;
   }
+}
+
+.gallery__link-gallery,
+.gallery__link-sevices {
+  @media (max-width: 768px) {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+  @media (max-width: 400px) {
+    font-size: 8px;
+  }
+}
+
+.gallery__link-gallery--arrow {
+  display: inline-block;
 }

@@ -1,13 +1,16 @@
 .formMenu {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 0;
   background-color: white;
   width: 1564px;
   height: 280px;
-  z-index: 10000;
+  z-index: 150;
   width: 1564px;
   margin-inline: 178px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
 }
 .formMenu.open {
   display: -webkit-box;
@@ -17,6 +20,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1700px) {
   .formMenu {

@@ -64,6 +64,9 @@
     padding-block: 19px;
   }
 }
+.nav.hidden {
+  display: none;
+}
 
 .number__body {
   display: -webkit-box;

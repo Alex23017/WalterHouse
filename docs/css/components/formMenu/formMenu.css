@@ -1,17 +1,21 @@
 .formMenu {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 0;
   background-color: white;
   width: 97.75rem;
   height: 17.5rem;
-  z-index: 10000;
+  z-index: 150;
   width: 1564px;
   margin-inline: 11.125rem;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
 }
 .formMenu.open {
   display: flex;
   flex-direction: column;
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1700px) {
   .formMenu {

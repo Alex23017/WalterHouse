@@ -16,7 +16,6 @@ body {
   background: #000;
 }
 .body.open {
-
 }
 
 .wrapper {
@@ -28,6 +27,11 @@ body {
   height: 100%;
   overflow: hidden;
   max-width: 1920px;
+  &.active {
+    @media (max-width: 320px) {
+      max-height: 900px;
+    }
+  }
 }
 
 .swiper-container {

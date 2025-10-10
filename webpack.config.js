@@ -10,6 +10,10 @@ export default {
     main: "./src/js/main.js",
     screen5: "./src/js/screen5.js",
     screen6: "./src/js/screen6.js",
+    about: "./src/js/about.js",
+    service: "./src/js/service.js",
+    cardsPopUp: "./src/js/cardsPopUp.js",
+    gallery: "./src/js/gallery.js",
   },
   output: {
     filename: "[name].bundle.js",

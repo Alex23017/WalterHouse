@@ -32,6 +32,9 @@
 .side.active .line {
   margin-inline-start: 0.625rem;
 }
+.side.hidden {
+  display: none;
+}
 
 .side__text {
   display: flex;
@@ -87,5 +90,12 @@
   .side__body {
     display: none;
   }
+}
+
+.side__logo {
+  cursor: pointer;
+}
+.side__logo:hover {
+  transform: scale(0.9);
 }
 /*# sourceMappingURL=sidePanel.css.map */

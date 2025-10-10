@@ -21,6 +21,10 @@
   }
 }
 
+.pagination.hidden {
+  display: none !important;
+}
+
 .pagination__figure {
   display: block;
 }

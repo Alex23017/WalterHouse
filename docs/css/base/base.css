@@ -24,6 +24,11 @@ body {
   overflow: hidden;
   max-width: 120rem;
 }
+@media (max-width: 320px) {
+  .wrapper.active {
+    max-height: 56.25rem;
+  }
+}
 
 .swiper-container {
   width: 100%;

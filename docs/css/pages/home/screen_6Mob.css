@@ -271,6 +271,7 @@
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
+  z-index: 2000;
   cursor: pointer;
 }
 /*# sourceMappingURL=screen_6Mob.css.map */

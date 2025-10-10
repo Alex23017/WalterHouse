@@ -24,3 +24,4 @@ btnClose.addEventListener("click", () => {
   form.classList.remove("none");
   slide.classList.remove("swiper-no-swiping");
 });
+

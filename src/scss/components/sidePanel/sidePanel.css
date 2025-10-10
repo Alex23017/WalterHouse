@@ -43,6 +43,9 @@
   -webkit-margin-start: 10px;
           margin-inline-start: 10px;
 }
+.side.hidden {
+  display: none;
+}
 
 .side__text {
   display: -webkit-box;
@@ -122,4 +125,12 @@
   .side__body {
     display: none;
   }
+}
+
+.side__logo {
+  cursor: pointer;
+}
+.side__logo:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }/*# sourceMappingURL=sidePanel.css.map */

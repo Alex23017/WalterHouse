@@ -1,0 +1,221 @@
+.overlay__about {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(35px);
+}
+
+.form__about {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: 152;
+  max-height: 1080px;
+  width: 100%;
+  max-width: 1920px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.form__about.open {
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .form__about {
+    display: none !important;
+  }
+}
+
+.more__text {
+  cursor: pointer;
+}
+.more__text:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.form__body {
+  position: absolute;
+  width: 1564px;
+  height: 880px;
+  z-index: 250;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.form__body::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2509803922);
+  bottom: 0;
+}
+
+.form__back {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 109px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 250;
+  min-width: 100%;
+  max-width: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 38px;
+}
+
+.form__img-img {
+  max-width: 344px;
+  max-height: 310px;
+  position: relative;
+}
+
+.form__img {
+  position: absolute;
+  -webkit-padding-before: 151px;
+          padding-block-start: 151px;
+  -webkit-padding-after: 239px;
+          padding-block-end: 239px;
+  -webkit-padding-start: 33px;
+          padding-inline-start: 33px;
+  -webkit-padding-end: 32px;
+          padding-inline-end: 32px;
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 40px;
+  left: 0;
+}
+@media (max-width: 1800px) {
+  .form__img {
+    display: none;
+  }
+}
+
+.hero__about {
+  position: absolute;
+  bottom: 58px;
+  text-transform: uppercase;
+  left: 14px;
+  color: white;
+  font-family: "Bruno Ace SC";
+}
+.hero__about .hero__title--margin {
+  -webkit-margin-start: 110px;
+          margin-inline-start: 110px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+.hero__about .hero__title--shadow {
+  -webkit-filter: inherit;
+          filter: inherit;
+  font-size: 56px;
+  line-height: 50px;
+  font-weight: 400;
+}
+.hero__about .hero__text {
+  font-size: 10px;
+}
+
+.form__text-hero {
+  font-size: 36px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-padding-after: 54px;
+          padding-block-end: 54px;
+  -webkit-margin-start: -2px;
+          margin-inline-start: -2px;
+}
+@media (max-width: 1280px) {
+  .form__text-hero {
+    font-size: 24px;
+  }
+}
+
+.form__text-title {
+  position: relative;
+  font-size: 24px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-padding-after: 27px;
+          padding-block-end: 27px;
+}
+@media (max-width: 1280px) {
+  .form__text-title {
+    font-size: 18px;
+  }
+}
+
+.form__text-text {
+  font-size: 18px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  -webkit-padding-after: 31px;
+          padding-block-end: 31px;
+  max-width: 956px;
+}
+.form__text-text span {
+  color: #ffac30;
+}
+@media (max-width: 1280px) {
+  .form__text-text {
+    font-size: 14px;
+    max-width: 600px;
+  }
+}
+
+.form__text {
+  max-width: 1019px;
+  position: absolute;
+  top: 169px;
+  right: 63px;
+}
+@media (max-width: 1800px) {
+  .form__text {
+    right: 150px;
+  }
+}
+@media (max-width: 1280px) {
+  .form__text {
+    right: 450px;
+  }
+}
+
+.form__text-hero {
+  max-width: 936px;
+}
+@media (max-width: 1280px) {
+  .form__text-hero {
+    max-width: 600px;
+  }
+}
+
+.form__text-title::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  top: 15px;
+  left: -65px;
+  background-color: white;
+}/*# sourceMappingURL=about.css.map */
