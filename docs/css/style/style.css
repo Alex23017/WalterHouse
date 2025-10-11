@@ -4513,7 +4513,31 @@ form .input__line input:focus:invalid + .error-text {
     top: 50.9375rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 383px) {
+  .service__vip {
+    top: 50rem;
+    height: 83.75rem;
+  }
+}
+@media (max-width: 377px) {
+  .service__vip {
+    top: 48.75rem;
+    height: 83.75rem;
+  }
+}
+@media (max-width: 360px) {
+  .service__vip {
+    top: 46.25rem;
+    height: 83.75rem;
+  }
+}
+@media (max-width: 340px) {
+  .service__vip {
+    top: 45.3125rem;
+    height: 83.75rem;
+  }
+}
+@media (max-width: 330px) {
   .service__vip {
     top: 45rem;
     height: 83.75rem;
@@ -4594,7 +4618,7 @@ form .input__line input:focus:invalid + .error-text {
 @media (max-width: 600px) {
   .service__info--service {
     place-items: center;
-    top: 5rem;
+    top: -3.75rem;
   }
 }
 @media (max-width: 320px) {

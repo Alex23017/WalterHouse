@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const array = [
     {
       title: "ELITE",
-      close: "../img/Home/screen_6Mob/close.png",
+      close: "img/Home/screen_6Mob/close.png",
       style: "ELITE style",
       textMob:
         "В стоимость стиля ELITE входит весь базовый набор работ, необходимый для отличного ремонта.",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "VIP",
-      close: "../img/Home/screen_6Mob/close.png",
+      close: "img/Home/screen_6Mob/close.png",
       style: "VIP style",
       textMob:
         "В стоимость стиля VIP входит весь базовый набор работ, необходимый для отличного ремонта.",
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "EXTRA",
-      close: "../img/Home/screen_6Mob/close.png",
+      close: "img/Home/screen_6Mob/close.png",
       style: "EXTRA style",
       textMob:
         "В стоимость стиля EXTRA входит весь базовый набор работ, необходимый для отличного ремонта.",
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   serviceVipPopUp.innerHTML = `
   <div class="service__vip-header">
-    <img src="../img/Home/screen_6Mob/close.png" alt="close" class="service__img service__img--close" />
+    <img src="img/Home/screen_6Mob/close.png" alt="close" class="service__img service__img--close" />
   </div>
   <div class="service__info service__info--service service__info--mob">
     <p class="service__price service__price--mob">от 3000 грн.</p>

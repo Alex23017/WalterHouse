@@ -27,7 +27,23 @@
   }
   @media (max-width: 600px) {
   }
-  @media (max-width: 320px) {
+  @media (max-width: 383px) {
+    top: 800px;
+    height: 1340px;
+  }
+  @media (max-width: 377px) {
+    top: 780px;
+    height: 1340px;
+  }
+  @media (max-width: 360px) {
+    top: 740px;
+    height: 1340px;
+  }
+  @media (max-width: 340px) {
+    top: 725px;
+    height: 1340px;
+  }
+  @media (max-width: 330px) {
     top: 720px;
     height: 1340px;
   }
@@ -90,7 +106,11 @@
   }
   @media (max-width: 600px) {
     place-items: center;
-    top: 80px;
+    top: -60px;
+  }
+  @media (max-width: 383px) {
+    // top: -130px;
+    // left: 0px;
   }
   @media (max-width: 320px) {
     top: -133px;

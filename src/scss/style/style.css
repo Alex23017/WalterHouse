@@ -2594,6 +2594,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 2000;
   cursor: pointer;
 }
 
@@ -5359,6 +5360,18 @@ form .input__line input:focus:invalid + .error-text {
     left: 20px;
     max-width: 280px;
   }
+}
+
+@media (max-width: 768px) {
+  .service__price--mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.service__info--mob {
+  top: -250px;
 }
 
 .popupcards {

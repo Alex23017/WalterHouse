@@ -39,7 +39,31 @@
     top: 815px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 383px) {
+  .service__vip {
+    top: 800px;
+    height: 1340px;
+  }
+}
+@media (max-width: 377px) {
+  .service__vip {
+    top: 780px;
+    height: 1340px;
+  }
+}
+@media (max-width: 360px) {
+  .service__vip {
+    top: 740px;
+    height: 1340px;
+  }
+}
+@media (max-width: 340px) {
+  .service__vip {
+    top: 725px;
+    height: 1340px;
+  }
+}
+@media (max-width: 330px) {
   .service__vip {
     top: 720px;
     height: 1340px;
@@ -125,7 +149,7 @@
 @media (max-width: 600px) {
   .service__info--service {
     place-items: center;
-    top: 80px;
+    top: -60px;
   }
 }
 @media (max-width: 320px) {
