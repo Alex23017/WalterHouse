@@ -223,4 +223,10 @@ form .input__line input:focus:invalid + .error-text {
   &:hover {
     transform: scale(0.9);
   }
+  @media (max-width: 600px) {
+  font-size: 12px;
+  }
+  @media (max-width: 400px) {
+  display: none;
+  }
 }

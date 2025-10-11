@@ -292,4 +292,14 @@ form .input__line input:focus:invalid + .error-text {
 .order__back-title:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+@media (max-width: 600px) {
+  .order__back-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .order__back-title {
+    display: none;
+  }
 }/*# sourceMappingURL=order.css.map */

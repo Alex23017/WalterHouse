@@ -343,6 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       menu.classList.remove("open");
       formMenuOpen.classList.remove("open");
+      wrapper.classList.remove("active");
     });
   });
 
@@ -361,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
   linksSteps.addEventListener("click", () => {
     if (window.innerWidth >= 768) {
       setTime(500, 2650);
-    } else if (window.innerWidth <= 400) {
+    } else if (window.innerWidth <= 768) {
       setTime(500, 2200);
     }
   });
