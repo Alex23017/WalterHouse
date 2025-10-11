@@ -224,9 +224,14 @@ form .input__line input:focus:invalid + .error-text {
     transform: scale(0.9);
   }
   @media (max-width: 600px) {
-  font-size: 12px;
+    font-size: 12px;
   }
   @media (max-width: 400px) {
-  display: none;
+    display: none;
   }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  pointer-events: all;
 }

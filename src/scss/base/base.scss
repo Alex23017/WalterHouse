@@ -105,3 +105,8 @@ body {
   max-width: 107%;
   height: 101%;
 }
+.swiper-next-gallery,
+.swiper-prev-gallery {
+  cursor: pointer;
+  z-index: 9999 !important; /* на всякий случай */
+}

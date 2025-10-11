@@ -20,32 +20,23 @@
     <div class="wrapper">
       <header class="header">@@include("../components/header/header.html")</header>
       @@include("../components/sidePanel/sidePanel.html")
-      @@include("../components/pagination/paginationGallery.html")
-      @@include("../popUp/menu.html")
-      @@include("../popUp/order.html")
-      @@include("../popUp/about.html")
+      @@include("../components/pagination/paginationGallery.html") @@include("../popUp/menu.html")
+      @@include("../popUp/order.html") @@include("../popUp/about.html")
       @@include("../components/galleryBack/galleryBack.html")
       @@include("../components/galleryArrow/galleryArrow.html")
 
-
-      <div class="swiper-container container--gallery">
-        <div class="swiper-wrapper swipper--gallery">
-             @@include("./gallery/gallery_1.html")
-             @@include("./gallery/gallery_2.html")
-             @@include("./gallery/gallery_3.html")
-             @@include("./gallery/gallery_4.html")
-   
+      <div class="swiper-container container-gallery">
+        <div class="swiper-wrapper">
+          @@include("./gallery/gallery_1.html") @@include("./gallery/gallery_2.html")
+          @@include("./gallery/gallery_3.html") @@include("./gallery/gallery_4.html")
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination-gallery"></div>
+
         <div class="form__visible form__gallery">@@include("../components/form/form.html")</div>
       </div>
+    </div>
 
-    
     <script defer src="js/main.bundle.js"></script>
     <script defer src="js/gallery.bundle.js"></script>
-
   </body>
 </html>
- 

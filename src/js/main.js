@@ -376,4 +376,6 @@ document.addEventListener("DOMContentLoaded", () => {
     header.style.zIndex = "149";
     console.log(e.target);
   });
+  console.log(document.querySelector(".swiper-button-next")); // должен вернуть div
+  console.log(document.querySelector(".swiper-button-prev")); // должен вернуть div
 });

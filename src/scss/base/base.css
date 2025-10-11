@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   margin: 0;
@@ -136,4 +137,10 @@ body {
   width: 106%;
   max-width: 107%;
   height: 101%;
+}
+
+.swiper-next-gallery,
+.swiper-prev-gallery {
+  cursor: pointer;
+  z-index: 9999 !important; /* на всякий случай */
 }/*# sourceMappingURL=base.css.map */

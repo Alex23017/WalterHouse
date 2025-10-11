@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===============================
    Modern CSS Reset / Full Reset
    =============================== */
@@ -221,6 +222,12 @@ body {
   width: 106%;
   max-width: 107%;
   height: 101%;
+}
+
+.swiper-next-gallery,
+.swiper-prev-gallery {
+  cursor: pointer;
+  z-index: 9999 !important; /* на всякий случай */
 }
 
 .side {
@@ -4288,6 +4295,12 @@ form .input__line input:focus:invalid + .error-text {
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  pointer-events: all;
+}
+
 .overlay__about {
   position: absolute;
   inset: 0;
@@ -5515,5 +5528,9 @@ form .input__line input:focus:invalid + .error-text {
 
 .circle__radius--third.active {
   stroke: #ffac30;
+}
+
+.container-gallery {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

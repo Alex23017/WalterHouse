@@ -302,4 +302,10 @@ form .input__line input:focus:invalid + .error-text {
   .order__back-title {
     display: none;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  pointer-events: all;
 }/*# sourceMappingURL=order.css.map */

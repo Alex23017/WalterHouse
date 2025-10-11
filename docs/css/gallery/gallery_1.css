@@ -502,4 +502,8 @@
 .circle__radius--third.active {
   stroke: #ffac30;
 }
+
+.container-gallery {
+  display: flex;
+}
 /*# sourceMappingURL=gallery_1.css.map */
