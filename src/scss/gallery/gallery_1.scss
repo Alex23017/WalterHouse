@@ -405,22 +405,23 @@
   animation: fadeInOut 3s ease-in-out infinite;
 }
 
-.circle__radius--one {
-  &.active {
-    fill: $colorYellow;
-  }
-}
-.circle__radius--two {
-  &.active {
-    stroke: $colorYellow;
-  }
-}
-
-.circle__radius--third {
-  &.active {
-    stroke: $colorYellow;
-  }
-}
 .container-gallery {
   display: flex;
+}
+
+.text__gallery--320 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 185px;
+  left: 30px;
+  transition: 0.2s ease-in-out;
+  z-index: 50;
+  max-width: 100px;
+  color: white;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 1.2s ease-in-out;
+  }
 }

@@ -532,20 +532,27 @@
           animation: fadeInOut 3s ease-in-out infinite;
 }
 
-.circle__radius--one.active {
-  fill: #ffac30;
-}
-
-.circle__radius--two.active {
-  stroke: #ffac30;
-}
-
-.circle__radius--third.active {
-  stroke: #ffac30;
-}
-
 .container-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.text__gallery--320 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 185px;
+  left: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  z-index: 50;
+  max-width: 100px;
+  color: white;
+}
+.text__gallery--320.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 1.2s ease-in-out;
+  transition: 1.2s ease-in-out;
 }/*# sourceMappingURL=gallery_1.css.map */

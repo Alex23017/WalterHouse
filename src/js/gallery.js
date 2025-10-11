@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const lineAnimationSecond = document.querySelector(".gallery__line-2");
   const circleOne = document.querySelector(".circle2__gallery--768");
   const circleAnimation = document.querySelector(".gallery__circle-animation");
+  const textGallery320 = document.querySelector(".text__gallery--320");
+
   const circleTwo = document.querySelectorAll(
     ".circle__radius--one, .circle__radius--two, .circle__radius--third",
   );
@@ -50,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lineAnimationOne.classList.toggle("active");
     lineAnimationSecond.classList.toggle("active");
     circleAnimation.classList.toggle("active");
+    textGallery320.classList.toggle("active");
   });
 
   circleOne.addEventListener("click", () => {
