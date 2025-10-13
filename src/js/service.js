@@ -186,21 +186,30 @@ document.addEventListener("DOMContentLoaded", () => {
       </svg>
      
         `;
+    });
+  });
 
-      const serviceClose = serviceVipPopUp.querySelector(".service__img--close");
+  const serviceClose = serviceVipPopUp.querySelector(".service__img--close");
+  const formMobMenu = document.querySelectorAll(".form__visible, .form");
+  const formMenuDs = document.querySelector(".formMenu");
 
-      serviceClose.addEventListener("click", () => {
-        serviceVipPopUp.classList.remove("open");
-        serviceNav.classList.remove("hidden");
-        serviceSide.classList.remove("hidden");
-        servicePagination.classList.remove("hidden");
-        window.swiper.allowTouchMove = true;
-      });
+  serviceClose.addEventListener("click", () => {
+    serviceVipPopUp.classList.remove("open");
+    serviceNav.classList.remove("hidden");
+    serviceSide.classList.remove("hidden");
+    servicePagination.classList.remove("hidden");
+    formMenuDs.classList.add("open");
+    window.swiper.allowTouchMove = true;
+    formMobMenu.forEach((element) => {
+      element.style.display = "none";
     });
   });
   const menuAdditional = document.querySelector(".menu__link--additional");
   menuAdditional.addEventListener("click", (e) => {
     e.preventDefault();
     serviceVipPopUp.classList.add("open");
+    formMobMenu.forEach((element) => {
+      element.style.display = "none";
+    });
   });
 });
