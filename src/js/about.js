@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const AboutScreen = document.querySelectorAll(".form__visible, .form");
   const sideLogoAbout = document.querySelector(".side__logo");
   const moreSelect = document.querySelector(".more--select");
+  const blogBtn = document.querySelector(".menu__item--blog");
+
+  blogBtn.addEventListener("click", () => {
+    AboutScreen.forEach((btn) => {
+      btn.style.display = "none";
+    });
+  });
 
   function openAboutForm() {
     aboutForm.classList.add("open");

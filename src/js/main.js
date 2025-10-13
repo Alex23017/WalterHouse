@@ -178,9 +178,14 @@ document.addEventListener("DOMContentLoaded", () => {
   burger.addEventListener("click", () => {
     if (!menu) return;
     menu.classList.toggle("open");
-    formMenuOpen.classList.toggle("open");
     body.classList.toggle("open");
     wrapper.classList.toggle("active");
+
+    if (menu.classList.contains("open")) {
+      formMenuOpen.classList.add("open")
+    } else {
+      formMenuOpen.classList.remove("open")
+    }
 
     if (menu.classList.contains("open")) {
       screen.forEach((el) => {
@@ -202,6 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       paginationMenu.style.display = "flex";
     }
   });
+
 
   //MENU
   const menuLinks = document.querySelector(".menu__link--blog");
@@ -387,5 +393,4 @@ document.addEventListener("DOMContentLoaded", () => {
     header.style.zIndex = "149";
     console.log(e.target);
   });
-
 });
