@@ -129,7 +129,7 @@
   -webkit-margin-start: -1px;
           margin-inline-start: -1px;
 }
-@media (max-width: 992.99px) {
+@media (max-width: 1050px) {
   .number {
     display: none;
   }
