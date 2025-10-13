@@ -322,6 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
     errorText.style.display = "none";
   });
   const linksMobMenu = document.querySelectorAll(".menu__link-mob");
+  const linksDs = document.querySelectorAll(".menu__item");
   const linksCosts = document.querySelector(".menu__link-mob--costs");
   const linksSteps = document.querySelector(".menu__link-mob--steps");
   const linksStyles = document.querySelector(".menu__link-mob--styles");
@@ -331,6 +332,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ".screen__3--mob, .screen__4--mob, .screen__5--mob, .screen__6--mob",
   );
   const formMobMenu = document.querySelectorAll(".form__visible, .form");
+  const formMenuDs = document.querySelector(".formMenu");
+
+  linksDs.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      formMenuDs.classList.remove("open");
+    });
+  });
 
   linksMobMenu.forEach((link) => {
     link.addEventListener("click", (e) => {
