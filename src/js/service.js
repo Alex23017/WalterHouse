@@ -122,16 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
   </svg>
 `;
 
-  const closeBtn = serviceVipPopUp.querySelector(".service__img--close");
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      serviceVipPopUp.classList.remove("open");
-      serviceNav.classList.remove("hidden");
-      serviceSide.classList.remove("hidden");
-      servicePagination.classList.remove("hidden");
-      if (window.swiper) window.swiper.allowTouchMove = true;
-    });
+serviceVipPopUp.addEventListener("click", (e) => {
+  if (e.target.classList.contains("service__img--close")) {
+    serviceVipPopUp.classList.remove("open");
+    serviceNav.classList.remove("hidden");
+    serviceSide.classList.remove("hidden");
+    servicePagination.classList.remove("hidden");
+    if (window.swiper) window.swiper.allowTouchMove = true;
   }
+});
 
   serviceBtnVip.forEach((service, index) => {
     service.addEventListener("click", (e) => {
@@ -189,12 +188,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const serviceClose = serviceVipPopUp.querySelector(".service__img--close");
+  const serviceClose = document.querySelector(".service__img--close");
   const formMobMenu = document.querySelectorAll(".form__visible, .form");
   const formMenuDs = document.querySelector(".formMenu");
 
   serviceClose.addEventListener("click", () => {
-    serviceVipPopUp.classList.remove("open");
+
     serviceNav.classList.remove("hidden");
     serviceSide.classList.remove("hidden");
     servicePagination.classList.remove("hidden");
