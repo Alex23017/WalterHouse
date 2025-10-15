@@ -535,7 +535,6 @@
 
 @media (max-width: 992.99px) {
   .screen__img {
-    max-height: 45rem;
     -o-object-position: left center;
        object-position: left center;
     -o-object-fit: cover;
