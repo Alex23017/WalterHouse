@@ -183,4 +183,20 @@
   background: linear-gradient(rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
   right: -144px;
   top: -50px;
+}
+
+.renovation__elite-text {
+  position: absolute;
+  top: 228px;
+  left: 710px;
+  letter-spacing: 6px;
+  font-family: "Roboto";
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  z-index: 10;
+  max-width: 500px;
 }/*# sourceMappingURL=screen_2.css.map */

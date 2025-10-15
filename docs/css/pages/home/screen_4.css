@@ -265,7 +265,6 @@
   font-family: "Roboto";
   max-width: 34.75rem;
   letter-spacing: 0.4125rem;
-  text-transform: uppercase;
   color: white;
 }
 @media (max-width: 1800px) {
